@@ -9,4 +9,4 @@ COPY package*.json ./
 COPY yarn.lock ./
 RUN yarn install
 COPY . .
-CMD ["npx", "ts-node", "src/index.ts"]
+CMD ["node", "./dist/src/index.js"]

@@ -5,8 +5,8 @@ ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
 
 WORKDIR /usr/src/app
 
-COPY package*.json
-COPY yarn.lock
+COPY package*.json ./
+COPY yarn.lock ./
 RUN yarn install
 COPY . .
 CMD ["npx", "tsc", "&&", "node", "dist/src/index.js"]

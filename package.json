@@ -5,8 +5,9 @@
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "scripts": {
+    "build": "npx tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx ts-node src/index.ts"
+    "start": "node dist/src/index.js"
   },
   "keywords": [],
   "author": "",

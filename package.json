@@ -2,12 +2,12 @@
   "name": "lily-api",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/src/index.js",
-  "types": "dist/src/index.d.ts",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
   "scripts": {
     "build": "npx tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node dist/src/index.js"
+    "start": "npx ts-node src/index.ts"
   },
   "keywords": [],
   "author": "",
